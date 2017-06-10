@@ -5,7 +5,7 @@ In Python, when we pass arguments into a method, there are two native arguments 
 
 Writing \*args & \**kargs is just a convention, technically we just need to define the asterisks, the variable name can be anything
 
-#### \*args
+### \*args
 
 \*args is used when we want to pass an *unknown* amount of **un-named** variables after the initial variable. Since we don't know how many arguments the user will eventually pass to the function, we use \*args then any arguments that come after that gets passed in
 
@@ -17,8 +17,6 @@ def test_var_args(f_arg, *argv):
 
 test_var_args('yasoob','python','eggs','test')
 
--------------------------------------
-
 RESULT:
 
 first normal arg: yasoob
@@ -27,7 +25,7 @@ another arg through *argv : eggs
 another arg through *argv : test
 
 ```
-#### \**kargs
+### \**kargs
 
 \**kargs is used when we want to pass **named** variables such as list or dictionary into the function.
 
@@ -41,7 +39,7 @@ def greet_me(**kwargs):
 name == yasoob
 ```
 
-#### Using \*args & \**kargs in function call
+### Using \*args & \**kargs in function call
 
 We can also call \*args or \**kargs in function calls when we have variables that comply to the amount of arguments defined in the function definition
 
